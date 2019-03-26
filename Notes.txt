@@ -1,0 +1,32 @@
+Task 2:
+Columns Removed:
+	- Remove all NaN columns
+	- Removed columns with cardinality = 1
+	- Removed feature is highly correlated (acc>0.8) with target
+	- Removed columns which can be irrelevant like names, ids etc
+Preprocessing: 
+	- Only one hot encoding
+
+Finally - 6 (5  cat, 1 float) 
+
+Task 3:
+a)
+Columns Added:
+	- Columns with fewer than 50% nulls
+Imputation:
+	- Constant
+Columns Removed:
+	- Columns with more than 50% nulls
+	- Removed columns which can be irrelevant like names, ids etc
+Preprocessing:
+	- OHE
+	- Scaling
+
+b) 
+a) + Imputation = Mode	
+
+c)
+b) + Preprocessing
+		- Target Encoding
+
+Task 4:
