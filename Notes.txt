@@ -1,3 +1,6 @@
+Task1:
+Only looked at individual variable performance
+
 Task 2:
 Columns Removed:
 	- Remove all NaN columns
@@ -9,6 +12,14 @@ Preprocessing:
 
 Finally - 6 (5  cat, 1 float) 
 
+##############################
+For some reason, the payments
+variable was getting treated 
+as an object variable. So 
+explicitly converted that into
+float
+##############################
+
 Task 3:
 a)
 Columns Added:
@@ -18,6 +29,7 @@ Imputation:
 Columns Removed:
 	- Columns with more than 50% nulls
 	- Removed columns which can be irrelevant like names, ids etc
+	- Having >= 100 categories
 Preprocessing:
 	- OHE
 	- Scaling
@@ -25,8 +37,14 @@ Preprocessing:
 b) 
 a) + Imputation = Mode	
 
+########################################
+ most_frequent better than Constant
+Using strategy ='most_frequent' going ahead
+for low cardinality categoricals
+########################################
+
 c)
 b) + Preprocessing
-		- Target Encoding
+		- Target Encoding (imputation = constant)
 
 Task 4:
